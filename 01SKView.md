@@ -134,8 +134,8 @@ Deprecated
 
 ### 继承自
 
-[NSView](),[UIView]()
+NSView,UIView
 
 ### 遵从协议
 
-[NSSecureCoding]()
+NSSecureCoding
