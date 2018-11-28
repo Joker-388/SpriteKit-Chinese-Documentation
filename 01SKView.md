@@ -1,3 +1,5 @@
+Class
+
 # SKView
 显示[SpriteKit](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/README.md)内容的对象，内容由SKSence对象提供。
 
