@@ -23,7 +23,7 @@ Framework
 <a name="overview"></a>
 ## 概述
 
-你可以通过调用视图的[presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/02presentScene.md)方法来显示一个场景，当一个场景被视图显示时，它会在动画内容和渲染内容之间进行交替显示。可以设置SKView的paused属性为true来设置暂停。
+你可以通过调用视图的[presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/presentScene.md)方法来显示一个场景，当一个场景被视图显示时，它会在动画内容和渲染内容之间进行交替显示。可以设置SKView的paused属性为true来设置暂停。
 
 <a name="topics"></a>
 ## 主题
@@ -31,21 +31,21 @@ Framework
 ### 显示场景
 
 <a name="presentScene"></a>
-[- presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/02presentScene.md)
+[- presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/presentScene.md)
 
 显示一个场景。
 
-[- presentSecne:transition:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/03presentScene:transition:.md)
+[- presentSecne:transition:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/presentScene:transition:.md)
 
 从当前场景转场到一个新的场景。
 
-[scene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/04scene.md)
+[scene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/scene.md)
 
 当先显示的场景。
 
 ### 配置场景如何渲染
 
-[delegate](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/05SKViewDelegate.md)
+[delegate](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKViewDelegate.md)
 
 允许动态配置视图渲染速率的委托协议。
 

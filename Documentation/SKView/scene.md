@@ -16,4 +16,4 @@ Instance Property
 
 ## 相关文档
 
-[presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/02presentScene.md)，[presentScene:transition:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/03presentScene:transition:.md)
+[presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/presentScene.md)，[presentScene:transition:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/presentScene:transition:.md)
