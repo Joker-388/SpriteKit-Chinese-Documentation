@@ -55,3 +55,37 @@ Framework
 - 调整游戏场景的大小，必要的时候，调整游戏的逻辑的美术资源以匹配场景的大小。
 - 将scaleMode属性设置为SKSceneScaleModeResizeFill。SpriteKit会自动调整场景的大小，使其始终与视图的大小匹配。必要的时候，调整游戏的逻辑的美术资源以匹配场景的大小。
 
+下面展示了使用固定大小场景的实现，这段代码指定了场景第一次显示的方法。它配置了场景的属性，包括缩放模式，然后添加内容。在这个例子中，缩放模式被设置为SKSceneScaleModeAspectFit，它在两个维度上对内容进行同等的缩放，并确保场景的所有内容都是可见的。
+```
+// 控制中执行的代码
+HelloScene *hello = [[HelloScene alloc] initWithSize:CGSizeMake(768,1024)];
+SKView *spriteView =(SKView *)self.view;
+[spriteView presentScene:hello];
+
+// 场景的定义
+@interface HelloScene()
+
+@property BOOL contentCreated;
+
+@end
+
+- (self)didMoveToView:(SKView *)view {
+  if(!self.contentCreated) {
+    [self createSceneContents];
+    self.contentCreated = YES;
+  }
+}
+
+- (void)createSceneContents {
+  self.scaleMode = SKSceneScaleModeAspectFit;
+  self.backgroundColor = [SKColor blueColor];
+  ...
+}
+```
+
+如果你希望场景大小在运行时发生变化，那么应该使用初始场景大小来确定要使用哪些美术资产，以及依赖于场景大小的任何游戏逻辑。你的游戏还应该重写场景的didChangeSize:方法，该方法在场景改变大小时被调用。当调用此方法时，应更新场景内容以匹配新的场景大小。
+
+## 场景如何处理动画框架
+
+
+
