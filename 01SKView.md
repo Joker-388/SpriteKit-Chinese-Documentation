@@ -45,7 +45,7 @@ Framework
 
 ### 配置场景如何渲染
 
-[delegate]()
+[delegate](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/05SKViewDelegate.md)
 
 允许动态配置视图渲染速率的委托协议。
 
