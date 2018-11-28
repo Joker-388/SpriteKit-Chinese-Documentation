@@ -23,7 +23,7 @@ Framework
 <a name="overview"></a>
 ## 概述
 
-一个SKScene对象代表SpriteKit的一个场景。场景是SpriteKit节点([SKNode]())数中的根节点。这些节点提供场景动画和显示的内容。你需要用一个[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/01SKView.md)对象来显示场景。
+一个SKScene对象代表SpriteKit的一个场景。场景是SpriteKit节点([SKNode]())数中的根节点。这些节点提供场景动画和显示的内容。你需要用一个[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)对象来显示场景。
 
 ### 创建场景
 
