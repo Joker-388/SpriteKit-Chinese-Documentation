@@ -28,12 +28,12 @@ SpriteKit是一个使纹理图像产生动画的图形渲染和动画功能基�
 ### 在SKView中绘制Sprite的内容
 
 动画和渲染由[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/01SKView.md)的对象执行。将这个SKView的对象添加到窗口中，然后由它来绘制内容。由于SKView的对象是一个view，所以它可以与其他view通过view的层级结构进行组合。
-将你的游戏内容组织到场景中，场景由[SKScene]()对象表示。一个场景包含精灵（Sprites）和其他需要被渲染的内容。一个场景实现了每一帧刷新的内容处理步骤和逻辑。任何时候，当视图展示场景后，就会自动执行动画和每一帧的逻辑。
-要使用SpriteKit创建一个游戏或应用，你可以创建[SKScene]()的子类，还可以实现场景的的代理方法来处理主要的游戏相关的任务。例如，你可以创建单独的场景类来分别显示主菜单、游戏场景和游戏结束显示的内容。你可以使用[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/01SKView.md)的对象在窗口中实现不同场景的切换。当你切换场景时，你可以使用[SKTransition]()类来实现场景切换的动画。
+将你的游戏内容组织到场景中，场景由[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/06SKScene.md)对象表示。一个场景包含精灵（Sprites）和其他需要被渲染的内容。一个场景实现了每一帧刷新的内容处理步骤和逻辑。任何时候，当视图展示场景后，就会自动执行动画和每一帧的逻辑。
+要使用SpriteKit创建一个游戏或应用，你可以创建[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/06SKScene.md)的子类，还可以实现场景的的代理方法来处理主要的游戏相关的任务。例如，你可以创建单独的场景类来分别显示主菜单、游戏场景和游戏结束显示的内容。你可以使用[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/01SKView.md)的对象在窗口中实现不同场景的切换。当你切换场景时，你可以使用[SKTransition]()类来实现场景切换的动画。
 
 ### 场景显示的内容由节点树来决定
 
-[SKScene]()类是[SKNode]()类的子类的子类（SKScene:SKEffectNode:SKNode）。当使用SpriteKit时，节点用来将所有内容组织起来，场景对象作为节点树中其他节点的根节点，场景对象决定绘制内容和如何渲染。
+[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/06SKScene.md)类是[SKNode]()类的子类的子类（SKScene:SKEffectNode:SKNode）。当使用SpriteKit时，节点用来将所有内容组织起来，场景对象作为节点树中其他节点的根节点，场景对象决定绘制内容和如何渲染。
 
 每一个节点的位置在其父节点定义的坐标系中指定，节点还将其他属性应用于其内容及其后代的内容。例如，当旋转节点时，它的所有后代也会旋转。你可以使用节点树构建复杂图像，然后通过调整最顶层节点的属性来旋转，缩放和混合整个图像。
 
@@ -81,7 +81,7 @@ Sprite Kit 通过处理较低级别的代码需求来加载纹理和并让它们
 SpriteKit将内容实现为分层的节点树结构。节点树由场景作为根节点和其他提供内容的节点构成。处理场景的每个帧并将其渲染到视图。场景执行动作和物理事件模拟，这两者都改变了树的内容。然后使用SpriteKit高效地渲染场景。
 要开始学习SpriteKit，您应该按照以下顺序查看这些类，然后再转到框架中的其他类：
 - [SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/01SKView.md)
-- [SKScene]()
+- [SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/06SKScene.md)
 - [SKNode]()
 - [SKSpriteNode]()
 - [SKAction]()
@@ -155,7 +155,7 @@ self.label.position = CGPointMake(CGRectGetMidX(self.scene.frame), CGRectGetMidY
 
 显示SKSpriteKit内容的对象，显示的内容有SKScene对象提供。
 
-[SKScene]()
+[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/06SKScene.md)
 
 视图中所有SpriteKit显示对象的根节点。
 
