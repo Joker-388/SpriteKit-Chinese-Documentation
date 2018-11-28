@@ -20,7 +20,7 @@ Instance Method
 
 ## 描述
 
-如果当前视图正在展示一个场景，那么视图的[scene]()属性会立即更新，转场会在两个场景切换之间执行。否则，新的场景会立即显示，转场参数会被忽略。
+如果当前视图正在展示一个场景，那么视图的[scene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/04scene.md)属性会立即更新，转场会在两个场景切换之间执行。否则，新的场景会立即显示，转场参数会被忽略。
 
 ## 相关文档
 
