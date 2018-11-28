@@ -39,7 +39,7 @@ Framework
 
 从当前场景转场到一个新的场景。
 
-[scene]()
+[scene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/04scene.md)
 
 当先显示的场景。
 
