@@ -17,11 +17,11 @@ Framework
 - SpriteKit
 
 本页包含内容：
-- [综述](#overview)
+- [概述](#overview)
 - [目录](#topics)
 
 <a name="overview"></a>
-## 综述
+## 概述
 
 SpriteKit是一个使纹理图像产生动画的图形渲染和动画功能基础框架，也称之为sprites（精灵）。SpriteKit提供了一个传统的渲染循环来更新将展示的内容并渲染。你来决定展示内容的结构和他们如何动态的变化。SpriteKit利用图形硬件有效的渲染。SpriteKit针对动画和内容的改变进行了优化，这种设计更适合需要灵活处理动画的游戏和应用程序。
 
