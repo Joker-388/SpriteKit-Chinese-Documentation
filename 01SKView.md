@@ -23,7 +23,7 @@ Framework
 <a name="overview"></a>
 ## 概述
 
-你可以通过调用视图的[presentScene:](presentScene)方法来显示一个场景，当一个场景被视图显示时，它会在动画内容和渲染内容之间进行交替显示。可以设置SKView的paused属性为true来设置暂停。
+你可以通过调用视图的[presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/02presentScene.md)方法来显示一个场景，当一个场景被视图显示时，它会在动画内容和渲染内容之间进行交替显示。可以设置SKView的paused属性为true来设置暂停。
 
 <a name="topics"></a>
 ## 主题
@@ -31,7 +31,7 @@ Framework
 ### 显示场景
 
 <a name="presentScene"></a>
-[- presentScene:]()
+[- presentScene:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/02presentScene.md)
 
 显示一个场景。
 
