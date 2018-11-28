@@ -35,7 +35,7 @@ Framework
 
 显示一个场景。
 
-[- presentSecne:transition:]()
+[- presentSecne:transition:](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/03presentScene:transition:.md)
 
 从当前场景转场到一个新的场景。
 
