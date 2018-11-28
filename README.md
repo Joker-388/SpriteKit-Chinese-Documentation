@@ -18,7 +18,7 @@ Framework
 
 本页包含内容：
 - [概述](#overview)
-- [目录](#topics)
+- [主题](#topics)
 
 <a name="overview"></a>
 ## 概述
@@ -146,7 +146,7 @@ self.label.position = CGPointMake(CGRectGetMidX(self.scene.frame), CGRectGetMidY
 ```
 
 <a name="topics"></a>
-## 目录
+## 主题
 ### 在你的应用中显示SpriteKit内容
 
 创建SpriteKit用于表示和展示内容的基本对象
