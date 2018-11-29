@@ -24,6 +24,7 @@ Framework
 - [子类说明](#subclass)
 - [主题](#topics)
 - [继承关系](#Relationships)
+- [另请参阅](#seealose)
 
 <a name="overview"></a>
 ## 概述
@@ -130,10 +131,149 @@ SKView *spriteView =(SKView *)self.view;
 
 ### 初始化场景
 [+ sceneWithSize:]()<br>
+
 创建并返回一个新的场景对象。
+
 [- initWithSize:]()<br>
+
 初始化一个新的场景对象。
+
 ### 确定场景的哪个部分在视图中可见
+
+[camera]()
+
+场景中的摄像机节点，用于确定场景的哪一部分坐标空间在视图中可见。
+
+[anchorPoint]()
+
+视图中与场景原点对其的点，决定场景frame中(0, 0)坐标的位置。如果锚点为(0, 0)则场景原点即其frame中的(0, 0)点在场景坐标系的左下角，其右上角的坐标为(场景的宽度，场景的高度)。如果锚点为(0.5, 0.5)则其场景的原点即其frame中的(0, 0)点在场景的中心，即右上角的坐标为(场景的宽度 * 0.5，场景的高度 * 0.5)。
+
+[size]()
+
+场景的尺寸。
+
+[- didChangeSize:]()
+
+当场景的size改变时被调用。
+
+[scaleMode]()
+
+定义如何将场景映射到显示它的视图中，即场景的缩放模式。
+
+### 设置场景的背景色
+
+[backgroundColor]()
+
+场景的背景色
+
+### 视图和场景中的坐标系转换
+
+[- convertPointFromView:]()
+
+将一个点从视图坐标转换为场景坐标。
+
+[- convertPointToView:]()
+
+将点从场景坐标转换为视图坐标。
+
+### 场景显示相关方法
+
+[- sceneDidLoad]()
+
+在场景被初始化或解码后立即调用。
+
+[- willMoveFromView:]()
+
+在场景从视图中移除之前立即调用。
+
+[- didMoveToView:]()
+
+在场景由视图显示后立即调用。
+
+[view]()
+
+当前显示场景的视图。
+
+### 执行动画循环相关方法
+
+[delegate]()
+
+动画循环中会被调用的代理。
+
+[- update:]()
+
+在场景动作执行前对场景进行特定的更新。
+
+[- didEvaluateActions]()
+
+在场景动作执行后对场景进行特定的更新。
+
+[- didSimulatePhysics]()
+
+执行物理模拟之后需要进行的场景特定更新。
+
+[- didApplyConstraints]()
+
+执行应用约束后需要进行的特定于场景的更新。
+
+[- didFinishUpdate]() 
+
+在场景完成处理动画所需的所有步骤后调用，这是你改变场景的最后机会。
+
+### 在场景中使用物理模拟
+
+[physicsWorld]()
+
+与场景相关的物理模拟。
+
+### 在场景中使用音频
+
+向场景中添加音频的最简单方法是添加一个SKAudioNode的子节点:
+
+```Objective-c
+- (void)didMoveToView:(SKView *)view {
+    SKAudioNode *audioNode = [[SKAudioNode alloc] initWithFileNamed:@"music.mp3"];
+    [self addChild:audioNode];
+}
+```
+
+[audioEngine]()
+
+播放场景中音频节点音频的AVFoundation音频引擎，可以用来进行播放相关操作，如声音大小、暂停播放等。
+
+[listener]()
+
+用于确定场景中音频监听位置的节点。
+
+<a name="Relationships"></a>
+## 继承关系
+
+### 继承自
+
+[SKEffectNode]()
+
+<a name="seealose"></a>
+## 另请参阅
+
+### 在应用程序中显示SpriteKit内容
+
+[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)
+
+显示SKSpriteKit内容的对象，显示的内容有SKScene对象提供。
+
+[SKNode]()
+
+大多数SpriteKit类的基本类（所有的节点类都从该类派生。它不绘制任何东西）。
+
+[SKViewDelegate]()
+
+允许SKView对象动态控制渲染速率。
+
+[SKSceneDelegate]()
+
+你的应用可以实现参与SpriteKit动画循环的方法。
+
+
 
 
 
