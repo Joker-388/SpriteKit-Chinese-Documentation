@@ -23,7 +23,7 @@ Framework
 
 本页包含内容：
 - [概述](#overview)
-- [精灵的内容通过场景在视图中显示](#Sprite Content is Drawn by Presenting Scenes Inside a Sprite View)
+- [精灵的内容通过场景在视图中显示](#overview01)
 - [主题](#topics)
 
 <a name="overview"></a>
@@ -31,7 +31,7 @@ Framework
 
 SpriteKit是一个使纹理图像产生动画的图形渲染和动画功能基础框架，也称之为sprites（精灵）。SpriteKit提供了一个传统的渲染循环来更新将展示的内容并渲染。你来决定展示内容的结构和他们如何动态的变化。SpriteKit利用图形硬件有效的渲染。SpriteKit针对动画和内容的改变进行了优化，这种设计更适合需要灵活处理动画的游戏和应用程序。
 
-<a name="Sprite Content is Drawn by Presenting Scenes Inside a Sprite View"></a>
+<a name="overview01"></a>
 ### 精灵的内容通过场景在视图中显示
 
 动画和渲染由[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)的对象执行。将这个视图添加到窗口中，然后由它来绘制内容。由于它是一个视图，所以它可以与其他视图通过视图的层级结构进行组合。
