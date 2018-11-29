@@ -23,6 +23,7 @@ Framework
 
 本页包含内容：
 - [概述](#overview)
+- [精灵的内容通过场景在视图中显示](#Sprite Content is Drawn by Presenting Scenes Inside a Sprite View)
 - [主题](#topics)
 
 <a name="overview"></a>
@@ -30,9 +31,10 @@ Framework
 
 SpriteKit是一个使纹理图像产生动画的图形渲染和动画功能基础框架，也称之为sprites（精灵）。SpriteKit提供了一个传统的渲染循环来更新将展示的内容并渲染。你来决定展示内容的结构和他们如何动态的变化。SpriteKit利用图形硬件有效的渲染。SpriteKit针对动画和内容的改变进行了优化，这种设计更适合需要灵活处理动画的游戏和应用程序。
 
-### 在SKView中绘制Sprite的内容
+<a name="Sprite Content is Drawn by Presenting Scenes Inside a Sprite View"></a>
+### 精灵的内容通过场景在视图中显示
 
-动画和渲染由[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)的对象执行。将这个SKView的对象添加到窗口中，然后由它来绘制内容。由于SKView的对象是一个view，所以它可以与其他view通过view的层级结构进行组合。
+动画和渲染由[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)的对象执行。将这个视图添加到窗口中，然后由它来绘制内容。由于它是一个视图，所以它可以与其他视图通过视图的层级结构进行组合。
 将你的游戏内容组织到场景中，场景由[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)对象表示。一个场景包含精灵（Sprites）和其他需要被渲染的内容。一个场景实现了每一帧刷新的内容处理步骤和逻辑。任何时候，当视图展示场景后，就会自动执行动画和每一帧的逻辑。
 要使用SpriteKit创建一个游戏或应用，你可以创建[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)的子类，还可以实现场景的的代理方法来处理主要的游戏相关的任务。例如，你可以创建单独的场景类来分别显示主菜单、游戏场景和游戏结束显示的内容。你可以使用[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)的对象在窗口中实现不同场景的切换。当你切换场景时，你可以使用[SKTransition]()类来实现场景切换的动画。
 
