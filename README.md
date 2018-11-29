@@ -180,7 +180,7 @@ self.label.position = CGPointMake(CGRectGetMidX(self.scene.frame), CGRectGetMidY
 
 [SKNode]()
 
-大多数SpriteKit类的基本类（所有的节点类都从该类派生。它不绘制任何东西）。
+大多数SpriteKit类的基类（所有的节点类都从该类派生。它不绘制任何东西）。
 
 [SKViewDelegate]()
 
