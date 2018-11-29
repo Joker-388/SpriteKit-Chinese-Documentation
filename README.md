@@ -24,6 +24,12 @@ Framework
 本页包含内容：
 - [概述](#overview)
 - [精灵的内容通过场景在视图中显示](#overview01)
+- [场景中显示的内容由节点树来决定](#overview02)
+- [纹理提供可重用的图形数据](#overview03)
+- [动画由节点执行动作来实现](#overview04)
+- [在场景中添加物理实体和关节来模拟物理世界](#overview05)
+- [SpriteKit入门](#overview06)
+- [创建你的第一个场景](#overview07)
 - [主题](#topics)
 
 <a name="overview"></a>
@@ -38,7 +44,8 @@ SpriteKit是一个使纹理图像产生动画的图形渲染和动画功能基�
 将你的游戏内容组织到场景中，场景由[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)对象表示。一个场景包含精灵（Sprites）和其他需要被渲染的内容。一个场景实现了每一帧刷新的内容处理步骤和逻辑。任何时候，当视图展示场景后，就会自动执行动画和每一帧的逻辑。
 要使用SpriteKit创建一个游戏或应用，你可以创建[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)的子类，还可以实现场景的的代理方法来处理主要的游戏相关的任务。例如，你可以创建单独的场景类来分别显示主菜单、游戏场景和游戏结束显示的内容。你可以使用[SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)的对象在窗口中实现不同场景的切换。当你切换场景时，你可以使用[SKTransition]()类来实现场景切换的动画。
 
-### 场景显示的内容由节点树来决定
+<a name="overview02"></a>
+### 场景中显示的内容由节点树来决定
 
 [SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)类是[SKNode]()类的子类的子类（SKScene:SKEffectNode:SKNode）。当使用SpriteKit时，节点用来将所有内容组织起来，场景对象作为节点树中其他节点的根节点，场景对象决定绘制内容和如何渲染。
 
@@ -50,7 +57,8 @@ SpriteKit是一个使纹理图像产生动画的图形渲染和动画功能基�
 
 请参考[SKNode]()
 
-### 纹理(Textures)保存可重用的图形数据
+<a name="overview03"></a>
+### 纹理提供可重用的图形数据
 
 纹理(Textures)，抽象为[SKTexture]()对象，是用于渲染精灵的共享图像。当需要将相同的图像应用于多个精灵时，你应当使用纹理。通常你通过app的bundle中加载图片数据来创建纹理。然后SpriteKit也可以利用运行时的其他来源，如Core Graphics图像甚至节点树来创建纹理。
 
@@ -60,7 +68,8 @@ Sprite Kit 通过处理较低级别的代码需求来加载纹理和并让它们
 
 请参考[SKTexture]()和[SKTextureAtlas]()
 
-### 动画由节点(Nodes)执行动作(Actions)来实现
+<a name="overview04"></a>
+### 动画由节点执行动作来实现
 
 场景内容执行做作(actions)来实现动画。每一个动作都是一个[SKAction]()类的对象。你来通知节点来执行动作,然后当场景处理动画帧时，执行动作。一些动作在一帧动画就完成，而另一些在完成前应用于多帧动画。动作最常见的用途是用来改变节点的属性并由动画展示。例如，你可以创建动作来对一个节点进行移动、缩放、旋转或更改透明度。另外，动作也可以更改节点树、播放声音甚至执行自定义的代码。
 
@@ -69,7 +78,8 @@ Sprite Kit 通过处理较低级别的代码需求来加载纹理和并让它们
 
 请参考[SKAction]()
 
-### 在你的场景中添加物理实体(Physics Bodies)和关节(Joints)来模拟物理世界
+<a name="overview05"></a>
+### 在场景中添加物理实体和关节来模拟物理世界
 
 虽然你可以控制场景中每一个节点的确切位置，但你通常会希望这些节点能够相互交互，相互碰撞并产生速度的变化。你可能还希望执行不是由动作控制的运动，比如模拟重力或者其他力。为此，你可以创建一个物理实体，一个[SKPhysicsBody]()类的对象，并将它添加给场景中的节点。每个物理主体由形状，大小，质量和其他物理特征来定义。
 
@@ -83,6 +93,7 @@ Sprite Kit 通过处理较低级别的代码需求来加载纹理和并让它们
 
 请参考[Simulating Physics]()
 
+<a name="overview06"></a>
 ## SpriteKit入门
 
 SpriteKit将内容实现为分层的节点树结构。节点树由场景作为根节点和其他提供内容的节点构成。处理场景的每个帧并将其渲染到视图。场景执行动作和物理事件模拟，这两者都改变了树的内容。然后使用SpriteKit高效地渲染场景。
@@ -94,6 +105,7 @@ SpriteKit将内容实现为分层的节点树结构。节点树由场景作为�
 - [SKAction]()
 - [SKPhysicsBody]()
 
+<a name="overview07"></a>
 #### 创建你的第一个场景
 
 SpriteKit像其他可视控件一样将内容展示在窗口中，SpriteKit的内容通过SKView类渲染。SKView渲染的内容为场景，它是一个SKScene对象。场景参与响应链并使其具有适合游戏的其他功能。
