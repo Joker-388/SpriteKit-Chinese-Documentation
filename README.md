@@ -47,15 +47,15 @@ SpriteKit是一个使纹理图像产生动画的图形渲染和动画功能基�
 <a name="overview02"></a>
 ### 场景中显示的内容由节点树来决定
 
-[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)类是[SKNode]()类的子类的子类（SKScene:SKEffectNode:SKNode）。当使用SpriteKit时，节点用来将所有内容组织起来，场景对象作为节点树中其他节点的根节点，场景对象决定绘制内容和如何渲染。
+[SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)类是[SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)类的子类的子类（SKScene:SKEffectNode:SKNode）。当使用SpriteKit时，节点用来将所有内容组织起来，场景对象作为节点树中其他节点的根节点，场景对象决定绘制内容和如何渲染。
 
 每一个节点的位置在其父节点定义的坐标系中指定，节点还将其他属性应用于其内容及其后代的内容。例如，当旋转节点时，它的所有后代也会旋转。你可以使用节点树构建复杂图像，然后通过调整最顶层节点的属性来旋转，缩放和混合整个图像。
 
-[SKNode]()类不会绘制任何东西，但是它的特性传递给了它的子类。每种可绘制内容都由SpriteKit中的不同子类表示。其他一些节点子类不会绘制自己的内容，而是修改其后代的行为。例如，你可以在场景中 使用一个[SKEffectNode]()对象对整个子树应用一个 Core Image 滤镜。通过控制节点树的结构可以控制节点的展示顺序。
+[SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)类不会绘制任何东西，但是它的特性传递给了它的子类。每种可绘制内容都由SpriteKit中的不同子类表示。其他一些节点子类不会绘制自己的内容，而是修改其后代的行为。例如，你可以在场景中 使用一个[SKEffectNode]()对象对整个子树应用一个 Core Image 滤镜。通过控制节点树的结构可以控制节点的展示顺序。
 
 所有的节点对象都是响应器对象，继承自UIRespinder或NSRespinder，因为创建任何节点对象的子类来接收用户的输入操作。视图类自动扩展响应者链以包括场景的节点树。
 
-请参考[SKNode]()
+请参考[SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)
 
 <a name="overview03"></a>
 ### 纹理提供可重用的图形数据
@@ -100,7 +100,7 @@ SpriteKit将内容实现为分层的节点树结构。节点树由场景作为�
 要开始学习SpriteKit，您应该按照以下顺序查看这些类，然后再转到框架中的其他类：
 - [SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)
 - [SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)
-- [SKNode]()
+- [SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)
 - [SKSpriteNode]()
 - [SKAction]()
 - [SKPhysicsBody]()
@@ -178,7 +178,7 @@ self.label.position = CGPointMake(CGRectGetMidX(self.scene.frame), CGRectGetMidY
 
 视图中所有SpriteKit显示对象的根节点。
 
-[SKNode]()
+[SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)
 
 大多数SpriteKit类的基类（所有的节点类都从该类派生。它不绘制任何东西）。
 
