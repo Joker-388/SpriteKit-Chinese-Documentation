@@ -31,9 +31,20 @@ Framework
 - [SpriteKit入门](#overview06)
 - [创建你的第一个场景](#overview07)
 - [主题](#topics)
-- [SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)
-- [SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)
-- [SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)
+- [在你的应用中显示SpriteKit内容](#topics01)
+ - [SKView](#topics01-1)
+ - [SKScene](#topics01-2)
+ - [SKNode](#topics01-3)
+ - [SKViewDelegate](#topics01-4)
+ - [SKSceneDelegate](#topics01-5)
+- [绘制内容的节点](#topics02)
+ - [SKSpriteNode](#topics02-1)
+ - [SKShapeNode](#topics02-2)
+ - [SKLabelNode](#topics02-3)
+ - [SKVideoNode](#topics02-4)
+ - [SKCropNode](#topics02-5)
+ - [SKReferenceNode](#topics02-6)
+- [使用纹理](#topics03)
 
 <a name="overview"></a>
 ## 概述
@@ -169,58 +180,73 @@ self.label.position = CGPointMake(CGRectGetMidX(self.scene.frame), CGRectGetMidY
 
 <a name="topics"></a>
 ## 主题
+
+<a name="topics01"></a>
 ### 在你的应用中显示SpriteKit内容
 
 创建SpriteKit用于表示和展示内容的基本对象
 
+<a name="topics01-1"></a>
 [SKView](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKView/SKView.md)
 
 显示SKSpriteKit内容的对象，显示的内容有SKScene对象提供。
 
+<a name="topics01-2"></a>
 [SKScene](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKScene/SKScene.md)
 
 视图中所有SpriteKit显示对象的根节点。
 
+<a name="topics01-3"></a>
 [SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)
 
 大多数SpriteKit类的基类（所有的节点类都从该类派生。它不绘制任何东西）。
 
+<a name="topics01-4"></a>
 [SKViewDelegate]()
 
 允许SKView对象动态控制渲染速率。
 
+<a name="topics01-5"></a>
 [SKSceneDelegate]()
 
 你的应用可以实现参与SpriteKit动画循环的方法。
 
+<a name="topics02"></a>
 ### 绘制内容的节点
 
 生成可显示形状，纹理，图像和视频的可视节点。
 
+<a name="topics02-1"></a>
 [SKSpriteNode]()
 
 绘制矩形纹理，图像或颜色的节点。
 
+<a name="topics02-2"></a>
 [SKShapeNode]()
 
 渲染一个由Core Graphics路径定义的形状的节点。
 
+<a name="topics02-3"></a>
 [SKLabelNode]()
 
 显示文本标签的节点。
 
+<a name="topics02-4"></a>
 [SKVideoNode]()
 
 播放视频内容的节点。
 
+<a name="topics02-5"></a>
 [SKCropNode]()
 
 该节点用于剪裁其子节点的部分区域，来使其子节点只有部分区域绘制到帧缓冲区。
 
+<a name="topics02-6"></a>
 [SKReferenceNode]()
 
 A node that creates its children from an archived collection of other nodes.
 
+<a name="topics03"></a>
 ### 使用纹理
 
 使用这些类从可以在SpriteKit游戏或应用程序中使用的图像资源生成纹理。
