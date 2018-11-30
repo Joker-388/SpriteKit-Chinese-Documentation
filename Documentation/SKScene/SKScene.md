@@ -261,7 +261,7 @@ SKView *spriteView =(SKView *)self.view;
 
 显示SKSpriteKit内容的对象，显示的内容有SKScene对象提供。
 
-[SKNode]()
+[SKNode](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/SKNode/SKNode.md)
 
 大多数SpriteKit类的基本类（所有的节点类都从该类派生。它不绘制任何东西）。
 
