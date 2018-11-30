@@ -43,11 +43,15 @@ Framework
 
 默认情况下，场景的原点位于视图的左下角，因此，初始化高度为1024、宽度为768的场景，原点(0,0)位于左下角，坐标(1024,768)位于右上角。frame属性保持(0,0)-(1024,768)。
 
-场景的position属性被Scene Kit忽略，因为场景总是节点树的根节点。它的默认值是0并且不能更改它。但是，您可以通过设置场景的锚点属性来移动场景的原点。
+场景的position属性被Scene Kit忽略，因为场景总是节点树的根节点。它的默认值是0并且不能更改它。但是，你可以通过设置场景的锚点属性来移动场景的原点。
+
+![SKScene01](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/images/SKScene01.png?raw=true)
 
 场景锚点的默认值是0，它位于左下角。场景的可见坐标空间是(0,0)到(width,height)。对于不滚动场景内容的游戏，默认的锚点是最有用的。
 
 第二个最常见的锚点值是(0.5,0.5)，它将场景的原点置于视图的中间，场景的可见坐标空间为(-width/2，-height/2)到(width/2,height/2)。当你想要很容易地定位相对于屏幕中心的节点时，例如在滚动游戏中，以场景的锚点为中心是非常有用的。然而，使用[SKCameraNode]()可以更好地实现这种效果。
+
+![SKScene02](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/images/SKScene02.png?raw=true)
 
 因此，总的来说，anchorPoint和size属性用来设置场景的frame，它包含了场景的可见部分。
 
@@ -96,6 +100,8 @@ SKView *spriteView =(SKView *)self.view;
 在传统视图系统中，视图内容渲染一次后，然后只有当模型(model)的内容发生变化时才会 再次渲染。这种模式对于视图非常适用，因为在实践中，大多数视图内容是静态的。另一方面， Sprite Kit 是明确为动态内容设计的。Sprite Kit 不断更新的场景内容并渲染它，以确保动画是 平滑和精确的。
 
 动画和渲染场景的过程绑定到场景对象(SKScene)上。场景和动作处理只在场景被呈现时运 行。呈现的场景运行一个渲染循环，该循环在处理场景的节点树和渲染它之间交替进行。这种模 式类似于在大多数游戏中使用的渲染和处理循环。
+
+![SKScene03](https://github.com/Joker-388/SpriteKit-Chinese-Documentation/blob/master/Documentation/images/SKScene03.png?raw=true)
 
 每次通过渲染循环，场景的内容都会被更新然后被渲染。你不能重写渲染行为，而是要更新场景中的节点。但是，场景包含可以重写的方法来定制场景处理，并且你可以使用动作和物理来修改树中节点的属性。下面是渲染循环中的步骤:
 
